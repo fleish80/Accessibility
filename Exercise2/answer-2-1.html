@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Answer 2-1</title>
+    <link rel="stylesheet" href="accessibility.css">
+</head>
+<body>
+<form>
+    <!--Question 1-->
+    <h3>פרטי חשבון</h3>
+    <label for="branch-number">מספר סניף<span class="sr-only">מקסימום 20 תוים</span></label>
+    <input id="branch-number" type="number" aria-describedby="branch-number-description" max="20">
+    <p id="branch-number-description">חשוב מאוד להזין מספר סניף</p>
+
+    <!--Question 2-->
+    <fieldset>
+        <legend>האם ברצונך להעביר כסף לחשבון זה</legend>
+        <label for="checkbox-1">כן</label>
+        <input id="checkbox-1" type="radio" name="checkbox">
+        <label for="checkbox-2">לא</label>
+        <input id="checkbox-2" type="radio" name="checkbox">
+        <label for="checkbox-3">אולי</label>
+        <input id="checkbox-3" type="radio" name="checkbox">
+    </fieldset>
+</form>
+</body>
+</html>

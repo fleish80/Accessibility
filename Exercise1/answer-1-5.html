@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Answer 1-5</title>
+    <link rel="stylesheet" href="accessibility.css">
+</head>
+<body>
+    <form>
+        <h3>פרטי חשבון</h3>
+        <label for="branch-number">מספר סניף<span class="sr-only">מקסימום 20 תוים</span></label>
+        <input id="branch-number" type="number" aria-describedby="branch-number-description" max="20">
+        <p id="branch-number-description">חשוב מאוד להזין מספר סניף</p>
+    </form>
+</body>
+</html>

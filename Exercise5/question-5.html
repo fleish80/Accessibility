@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Question 5</title>
+    <link rel="stylesheet" href="accessibility.css">
+
+</head>
+<body>
+<form>
+
+    <h3>פרטי חשבון</h3>
+
+    <div>
+        <label for="choose-branch">בחר סניף</label>
+        <button id="choose-branch" type="button" role="combobox" aria-owns="listchoices">נבחר סניף 101</button>
+        <ul id="listchoices" role="listbox">
+            <li role="option" aria-selected="false">בחר</li>
+            <li role="option" aria-selected="false">סניף 98</li>
+            <li role="option" aria-selected="true">סניף 101</li>
+            <li role="option" aria-selected="false">סניף 30</li>
+        </ul>
+    </div>
+
+    <button id="btn-sbmt" type="submit">המשך</button>
+</form>
+</body>
+<script src="accessibility.js"></script>
+</html>
